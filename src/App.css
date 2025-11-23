@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+body{
+  background-color: aliceblue;
+}
+.navSection{
+  border: 1px solid black;
+  display:flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height:80px;
+}
+.title h2{
+  margin-left: 490px;
+  padding:25px;
+  font-size: 40px;
+}
+ 
+.user{
+  margin-right:70px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap:190px;
+  font-size: 20px;;
+}
+.proSection{
+  display:flex;
+  background-color: white;
+}
+.imgBox{
+  width:80%;
+  padding-left:20px;
+}
+.proImg{
+  width: 80%;
+}
+.proTitle h2{
+  margin: 10px;
+}
+.subMenu ul li{
+  list-style: none;
+  margin: 33px;
+  margin-top:10px;
+ 
+    
+}
+.subMenu{
+  background-color: rgb(9, 9, 0);
+  color:rgb(244, 248, 248);
+  height: 50px;
+  font-size: 15px;
+  
+}
+
+.subMenu ul{
+  
+  margin-left: 40px;
+  display: inline-flex;
+  
+
+}
+.pageSection{
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  gap:10px;
+}
+.pageImg{
+  width:250px;
+  height: 250px;
+
+}
+.pageImg img{
+  width: 100%;
+}
+.ind-image{
+  width:500px;
+  height:500px;
+}
+.ind-section{
+  display: flex;
+}
+.ind-image img{
+  width: 100%;
+}
+.ind-details {
+  padding: 20px;
+}
+.space{
+  margin: 10px;
+}
+.ind-details button{
+  background-color:yellow;
+  padding: 10px;
+  width: 10rem;
+  border-radius: 5px;
+  color:black;
+  columns:white;
+  font-size: 15px;
+}
+.fullpage{
+  display: flex;
+}
+.pro-selected{
+  width: 20%;
+  border: 1px solid black;
+}
+.pro-input input{
+margin:5px;
+}
+ul li{
+  color:white;
+  text-decoration: none;
+}
+.cart{
+  margin-right: 80px;
+  color:white;
+}
+.cart span{
+  color:red;
+}
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-wrapper {
+  display: flex;
+  transition: transform 0.9s ease;
+}
+
+.banner-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 30px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+.slide-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.left { left: 10px; }
+.right { right: 10px; }
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 32px;
+  color: white;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ffce00; /* optional hover effect */
+  transform: scale(1.1);
+}
+
+/* Cart count badge */
+.cart-count {
+  position: absolute;
+  top: -10px;      /* place above icon */
+  right: -10px;    /* slightly to the right */
+  background: red; 
+  color: white;
+  font-size: 12px; /* smaller number */
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid yellow; /* highlight border */
+  box-shadow: 0 0 3px yellow; /* subtle glow */
+}
+
+ /* 🌟 Responsive CSS */
+@media (max-width: 900px) {
+  .title h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .user {
+    gap: 40px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .pageSection {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .ind-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ind-image {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* 📱 Mobile screens */
+@media (max-width: 550px) {
+  .navSection {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .user {
+    gap: 15px;
+    margin: 0;
+  }
+
+  .pageSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .proSection {
+    flex-direction: column;
+  }
+/* 📱 Navbar responsive for small screens */
+@media (max-width: 768px) {
+  .navSection {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .title h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .user {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+
+  .proImg {
+    width: 100%;
+  }
+}
